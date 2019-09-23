@@ -75,6 +75,15 @@
             <link name="View %name% image" href="http://www.mapillary.com/map/im/%v%" />
         </rule>
     </src>
+    
+    <src name="Radio station or AtoN">
+        <rule>
+            <condition k="seamark:(virtual_aton|radio_station):mmsi" v="[0-9]+" />
+            <link name="View %name%" href="https://www.marinetraffic.com/en/ais/details/ships/shipid:/mmsi:%v%" />
+        </rule>
+    </src>
+
+
 
     <!-- Only for France --> 
     
